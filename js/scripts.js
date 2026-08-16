@@ -1,18 +1,24 @@
-// Este script hace que el acordeón se abra y se cierre
+/**
+ * Memoria y Resiliencia Personal
+ * Lógica de interactividad para el curso
+ */
 
 document.addEventListener('DOMContentLoaded', function() {
+    
+    // --- LÓGICA DEL ACORDEÓN ---
     var acc = document.getElementsByClassName("acordeon-btn");
     var i;
 
     for (i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function() {
-            // Alterna la clase 'active' para cambiar el color del botón
+            // Alterna la clase 'active' para cambiar el estilo del botón cuando está abierto
             this.classList.toggle("active");
 
-            // Selecciona el panel que está inmediatamente después del botón
+            // Selecciona el panel de contenido que le sigue inmediatamente al botón
             var panel = this.nextElementSibling;
             
-            // Si el panel tiene altura, lo cierra. Si no, lo abre.
+            // Si el panel ya tiene una altura máxima (está abierto), lo cierra.
+            // Si no tiene altura (está cerrado), calcula su tamaño y lo abre.
             if (panel.style.maxHeight) {
                 panel.style.maxHeight = null;
                 panel.style.borderBottom = "none";
