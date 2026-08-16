@@ -1,4 +1,6 @@
-/* --- Variables y Configuración General --- */
+/* =========================================
+   ESTILOS GENERALES Y VARIABLES
+   ========================================= */
 :root {
     --color-fondo: #f8fafc;
     --color-texto: #334155;
@@ -29,7 +31,9 @@ body {
     padding: 0 20px;
 }
 
-/* --- Encabezado Principal --- */
+/* =========================================
+   ENCABEZADO PRINCIPAL (HERO)
+   ========================================= */
 .hero-section {
     background-color: var(--color-primario);
     color: white;
@@ -49,7 +53,9 @@ body {
     color: #cbd5e1;
 }
 
-/* --- Módulos y Secciones --- */
+/* =========================================
+   MÓDULOS Y SECCIONES DE CONTENIDO
+   ========================================= */
 .module-section {
     background-color: white;
     margin: 40px 0;
@@ -89,7 +95,9 @@ body {
     margin-bottom: 20px;
 }
 
-/* --- Estilos del Acordeón (Interactividad) --- */
+/* =========================================
+   ACORDEÓN INTERACTIVO
+   ========================================= */
 .acordeon-btn {
     background-color: var(--color-acento);
     color: var(--color-primario);
@@ -124,7 +132,9 @@ body {
     margin: 15px 0;
 }
 
-/* --- Estilos de la Tabla del Espectro --- */
+/* =========================================
+   TABLA DEL ESPECTRO NARCISISTA
+   ========================================= */
 .table-responsive {
     overflow-x: auto;
 }
@@ -147,19 +157,22 @@ body {
     font-weight: 600;
 }
 
-/* Badges (Etiquetas de riesgo) */
 .badge {
     padding: 5px 10px;
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: bold;
     color: white;
+    display: inline-block;
 }
 
-.badge-bajo { background-color: #10b981; } /* Verde */
-.badge-medio { background-color: #f59e0b; } /* Naranja */
-.badge-alto { background-color: #ef4444; } /* Rojo */
-/* --- Estilos para el Ciclo de Abuso (Tarjetas Secuenciales) --- */
+.badge-bajo { background-color: #10b981; }
+.badge-medio { background-color: #f59e0b; }
+.badge-alto { background-color: #ef4444; }
+
+/* =========================================
+   CICLO DE ABUSO (TARJETAS EN GRID)
+   ========================================= */
 .ciclo-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -200,7 +213,9 @@ body {
     margin-bottom: 0;
 }
 
-/* --- Estilos para la Lista de Tácticas --- */
+/* =========================================
+   LISTA DE TÁCTICAS (LENGUAJE)
+   ========================================= */
 .tacticas-lista {
     list-style: none;
     margin-top: 20px;
